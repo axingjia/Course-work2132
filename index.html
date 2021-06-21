@@ -1,35 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
     <script src="./javascript/script.js" defer></script>
 </head>
+
 <body>
-    <div id="player1">
-        
-        player 1
-        <div class="current">
+    <div id="container">
 
-        </div>
-        <div class="total">
+        <div id="board">
 
+            <div style="display:flex; min-height: 300px;">
+
+                <div id="player1" class="flex1">
+
+                    <div class="title">
+                        player 1
+
+                    </div>
+                    <div style="display:flex" class="dice_container">
+
+                        <div class="dice1 flex1"></div>
+                        <div class="dice2 flex1"></div>
+                    </div>
+                    <div class="score_container">
+
+                        <div class="flex1 current_container">
+
+                            <div class="current">
+
+                            </div>
+                        </div>
+                        <div class="flex1 total_container">
+
+                            <div class="total">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div id="player2" class="flex1">
+                    <div class="title">
+                        Player2
+
+                    </div>
+                    <div style="display:flex" class="dice_container">
+
+                        <div class="dice1 flex1"></div>
+                        <div class="dice2 flex1"></div>
+                    </div>
+
+                    <div class="score_container">
+
+                        <div class="flex1 current_container">
+
+                            <div class="current">
+
+                            </div>
+                        </div>
+                        <div class="flex1 total_container">
+
+                            <div class="total">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div style="display:flex;justify-content: center;">
+                <button id="play-button">PLAY</button>
+                <button id="reset-button">RESET</button>
+            </div>
         </div>
     </div>
-    <br>
-    <div id="player2">
-        Player2
-        <div class="current">
-
-        </div>
-        <div class="total">
-
-        </div>
-
-    </div>
-    <button id="play-button">PLAY</button>
+    
 </body>
+
 </html>

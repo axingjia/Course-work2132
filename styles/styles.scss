@@ -1,0 +1,88 @@
+@mixin flexCenter {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+body,html{
+    margin:0;
+    padding:0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    // background-image: url("../img/bg.jpg");
+    background-image: url("../img/bg.jpg");
+    height: 100%;
+    
+}
+
+
+
+#container{
+    width:100%;
+    height: 100%;
+    display:flex;justify-content: center;align-items: center;
+    z-index: 2;
+}
+#board{
+    width: 60%;
+    height:60%;
+}
+
+.flex1{
+    flex:1;
+}
+
+.title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 94px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    // color: #000000;
+}
+
+.dice_container{
+    height: 150px;
+}
+
+.dice1,.dice2{
+    flex:1;
+        @include flexCenter();
+        display: flex;   
+}
+
+.score_container{
+    display: flex;;
+    width: 430px;
+    height: 157px;
+    
+
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 20px;
+    .current_container,.total_container{
+        flex:1;
+        @include flexCenter();
+        display: flex;    
+    }
+    
+}
+
+.current,.total{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 94px;
+    display: inline-block;
+
+}
